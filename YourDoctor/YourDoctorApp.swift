@@ -11,7 +11,9 @@ import SwiftUI
 struct YourDoctorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBarView()
+                .preferredColorScheme(.light)
+                .background(.black)
         }
     }
 }
