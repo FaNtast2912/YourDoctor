@@ -11,7 +11,6 @@ struct DoctorsListView: View {
     @Environment(\.dismiss) var presentationMode
     @StateObject var viewModel = DoctorsListViewModel()
     @State private var searchBar = ""
-    let mockNumbers = 10
     
     var searchedDoctor: [Doctor] {
         if searchBar.isEmpty { return viewModel.doctors }
@@ -27,6 +26,7 @@ struct DoctorsListView: View {
             
             NavigationStack {
                 VStack {
+                    Spacer(minLength: 1)
                     DoctorsListPicker()
                         .padding(.bottom, 8)
                     ScrollView {
@@ -52,7 +52,7 @@ struct DoctorsListView: View {
                 presentationMode.callAsFunction()
             }, label: {
                 Image(systemName: "chevron.backward")
-                    .tint(Color(.yourDoctorBlack))
+                    .tint(Color(.yourDoctorDarkGrey))
             }))
         }
         .navigationBarBackButtonHidden(true)

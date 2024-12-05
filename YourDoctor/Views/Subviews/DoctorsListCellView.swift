@@ -63,7 +63,7 @@ struct DoctorsListCellView: View {
             .padding(.horizontal, 32)
             
             
-            NavigationLink(destination: DoctorsDetails(doctor: doctor).toolbarRole(.editor)) {
+            NavigationLink(destination: DoctorsDetailsView(doctor: doctor).toolbarRole(.editor)) {
                 AppointmentButton(tittle: "Записаться", isAvailable: true, size: CGSize(width: 311, height: 47))
             }
             .padding(.horizontal, 16)

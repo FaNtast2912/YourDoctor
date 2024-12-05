@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AppointmentButton: View {
+    
     var tittle: String
     var isAvailable: Bool
     var size: CGSize

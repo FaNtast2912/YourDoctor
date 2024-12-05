@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DoctorsDetails: View {
+struct DoctorsDetailsView: View {
     @Environment(\.dismiss) var presentationMode
     let doctor: Doctor
     
@@ -60,7 +60,7 @@ struct DoctorsDetails: View {
                 presentationMode.callAsFunction()
             }, label: {
                 Image(systemName: "chevron.backward")
-                    .tint(Color(.yourDoctorBlack))
+                    .tint(Color(.yourDoctorDarkGrey))
             }))
         }
         .navigationBarBackButtonHidden(true)
@@ -70,5 +70,5 @@ struct DoctorsDetails: View {
 }
 
 #Preview {
-    DoctorsDetails(doctor: Doctor.mockDoctor)
+    DoctorsDetailsView(doctor: Doctor.mockDoctor)
 }

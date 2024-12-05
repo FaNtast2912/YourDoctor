@@ -46,7 +46,7 @@ final class DoctorsListViewModel: ObservableObject {
         task.resume()
     }
     
-    // MARK: - Private Methods
+    // MARK: - Private Method
     private func makeURLRequest() -> URLRequest? {
         guard let url = URL(string: urlString) else {
             assertionFailure("Cant make URL")

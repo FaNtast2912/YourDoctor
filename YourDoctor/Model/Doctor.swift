@@ -45,13 +45,17 @@ struct Doctor: Identifiable {
         }
     }
     var yearOfExperienceString: String {
-        switch seniority {
-        case 0:
-            return "нет информации о стаже"
-        case 1:
+        
+        let lastDigit = seniority % 10
+        let lastTwoDigits = seniority % 100
+        
+        switch lastDigit {
+        case 1 where lastTwoDigits != 11:
             return "стаж \(seniority) год"
         case 2...4:
             return "стаж \(seniority) года"
+        case 0:
+            return "нет информации о стаже"
         default:
             return "стаж \(seniority) лет"
         }
