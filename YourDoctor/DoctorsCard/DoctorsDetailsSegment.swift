@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DocktorsDetailsSegment: View {
+struct DoctorsDetailsSegment: View {
     var imageName: String
     var details: String
     
@@ -23,11 +23,11 @@ struct DocktorsDetailsSegment: View {
                 
                 
         }
-        .foregroundColor(Color("yourDoctor_DarkGrey"))
+        .foregroundColor(Color("yourDoctor_darkGrey"))
         .background(.yourDoctorBackgroundGrey)
     }
 }
 
 #Preview {
-    DocktorsDetailsSegment(imageName: "clock", details: "Опыт работы")
+    DoctorsDetailsSegment(imageName: "clock", details: "Опыт работы")
 }

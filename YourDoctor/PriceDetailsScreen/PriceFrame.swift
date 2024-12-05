@@ -16,7 +16,7 @@ struct PriceFrame: View {
             HStack {
                 Text(details)
                 Spacer()
-                Text(price + "₽")
+                Text(price)
                     .bold()
             }
             .padding(.horizontal, 16)
@@ -31,5 +31,5 @@ struct PriceFrame: View {
 }
 
 #Preview {
-    PriceFrame(details: "Стоимость услуг", price: "от 600")
+    PriceFrame(details: "Стоимость услуг", price: "от 600Р")
 }
