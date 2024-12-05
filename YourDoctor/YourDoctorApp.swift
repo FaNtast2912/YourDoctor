@@ -13,7 +13,6 @@ struct YourDoctorApp: App {
         WindowGroup {
             TabBarView()
                 .preferredColorScheme(.light)
-                .background(.black)
         }
     }
 }

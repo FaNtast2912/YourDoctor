@@ -33,7 +33,7 @@ struct PriceDetailsView: View {
                 presentationMode.callAsFunction()
             }, label: {
                 Image(systemName: "chevron.backward")
-                    .tint(Color(.yourDoctorBlack))
+                    .tint(Color(.yourDoctorDarkGrey))
             }))
         }
         .navigationBarBackButtonHidden(true)

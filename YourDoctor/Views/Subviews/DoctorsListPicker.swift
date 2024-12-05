@@ -19,11 +19,16 @@ struct DoctorsListPicker: View {
     
     init(selectedFilter: Filter = Filter.cost) {
         self.selectedFilter = selectedFilter
-        UISegmentedControl.appearance().selectedSegmentTintColor = .yourDoctorPink
-        let attributes : [NSAttributedString.Key: Any] = [.foregroundColor : UIColor.white]
-        let attributes2 : [NSAttributedString.Key: Any] = [.foregroundColor : UIColor.gray]
-        UISegmentedControl.appearance().setTitleTextAttributes(attributes, for: .selected)
-        UISegmentedControl.appearance().setTitleTextAttributes(attributes2, for: .normal)
+        let appearance = UISegmentedControl.appearance()
+        appearance.selectedSegmentTintColor = .yourDoctorPink
+        let attributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.white
+        ]
+        let attributes2: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.gray
+        ]
+        appearance.setTitleTextAttributes(attributes, for: .selected)
+        appearance.setTitleTextAttributes(attributes2, for: .normal)
     }
     
     var body: some View {
@@ -36,8 +41,9 @@ struct DoctorsListPicker: View {
                 Text("Picker")
             }
             .font(.system(size: 14))
-            .background(.yourDoctorWhite)
+            .background(.yourDoctorBackgroundGrey)
             .pickerStyle(.segmented)
+            
         }
     }
 }
