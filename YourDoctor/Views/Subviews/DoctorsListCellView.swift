@@ -44,7 +44,7 @@ struct DoctorsListCellView: View {
                     
                     Text(doctor.minimalPriceString)
                         .bold()
-                        .font(.system(size: 24))
+                        .font(.system(size: 16))
                 }
                 
                 Spacer()

@@ -15,6 +15,7 @@ struct PriceView: View {
         VStack(alignment: .leading) {
             Text(title)
                 .bold()
+                .font(.system(size: 16))
             PriceFrame(details: details, price: price)
         }
         .background(.yourDoctorBackgroundGrey)
