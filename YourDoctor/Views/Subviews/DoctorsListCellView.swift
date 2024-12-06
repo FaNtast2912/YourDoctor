@@ -40,7 +40,7 @@ struct DoctorsListCellView: View {
                     
                     Text("Педиатр" + "・" + doctor.yearOfExperienceString)
                         .font(.system(size: 14))
-                        .foregroundColor(Color("yourDoctor_darkGrey"))
+                        .foregroundColor(Color(.yourDoctorDarkGrey))
                     
                     Text(doctor.minimalPriceString)
                         .bold()
@@ -56,7 +56,7 @@ struct DoctorsListCellView: View {
                         .resizable()
                         .symbolRenderingMode(.palette)
                         .frame(width: 24, height: 20)
-                        .foregroundColor(isFavorite ? Color("yourDoctor_pink") : Color("yourDoctor_silver"))
+                        .foregroundColor(isFavorite ? Color(.yourDoctorPink) : Color(.yourDoctorSilver))
                 }
                 
             }

@@ -23,7 +23,7 @@ struct DoctorsDetailsSegment: View {
                 
                 
         }
-        .foregroundColor(Color("yourDoctor_darkGrey"))
+        .foregroundColor(Color(.yourDoctorDarkGrey))
         .background(.yourDoctorBackgroundGrey)
     }
 }

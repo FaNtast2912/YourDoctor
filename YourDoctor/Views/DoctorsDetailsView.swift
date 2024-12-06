@@ -39,7 +39,7 @@ struct DoctorsDetailsView: View {
                         Text("Проводит диагностику и лечение терапевтических больных. Осуществляет расшифровку и снятие ЭКГ. Дает рекомендации по диетологии. Доктор имеет опыт работы в России и зарубежом. Проводит консультации пациентов на английском языке.")
                             .font(.system(size: 14))
                     }
-                    .foregroundColor(Color("yourDoctor_black"))
+                    .foregroundColor(Color(.yourDoctorBlack))
                 }
                 Spacer()
                 
