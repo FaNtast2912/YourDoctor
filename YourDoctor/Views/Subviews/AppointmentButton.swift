@@ -4,7 +4,6 @@
 //
 //  Created by Maksim Zakharov on 02.12.2024.
 //
-
 import SwiftUI
 
 struct AppointmentButton: View {
