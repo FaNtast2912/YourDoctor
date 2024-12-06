@@ -18,6 +18,7 @@ struct PriceFrame: View {
             Text(price)
                 .bold()
         }
+        .font(.system(size: 16))
         .padding(.horizontal, 16)
         .frame(height: 56)
         .background(.white)
