@@ -1,6 +1,7 @@
 # YourDoctor
 
-![YourDoctor Demo](https://raw.githubusercontent.com/FaNtast2912/YourDoctor/main/Demo/YourDocktorDemo.gif)  
+<img src="https://raw.githubusercontent.com/FaNtast2912/YourDoctor/main/Demo/YourDocktorDemo.gif" alt="YourDoctor Demo" width="200">  
+*Demonstrates doctor profile viewing and appointment scheduling.* 
 
 # Ссылки
 
