@@ -1,5 +1,7 @@
 # YourDoctor
 
+![YourDoctor Demo](https://raw.githubusercontent.com/FaNtast2912/YourDoctor/main/Demo/YourDocktorDemo.gif)  
+
 # Ссылки
 
 - [Дизайн в Figma](https://www.figma.com/design/Kwic8nnnhxLYztOswqQWix/Test?node-id=4-19732&m=dev&t=XsPjBn67fMbLF1E9-1)
